@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Consumer Behaviour Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/178ddceb17.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Chilanka|Manjari&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet-src.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!--<link type="text/css" rel="stylesheet" href="../static/css/style.css" />-->
+    <link rel="icon" href="../static/images/favicon.ico">
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<!--Navigation Section-->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm" >
+        <a class="navbar-brand migration text-info text-center ml-3 mt-2" href="index.html">
+            <i class="fas fa-digital-tachograph" style="color:darkturquoise"></i> Consumer Behaviour Analytics</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"></li>
+            </ul>
+            <form class="form-inline float-right my-2 my-lg-0">
+                <ul class="navbar-nav mr-auto" id="menus">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-info mr-5 pr-5" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="fas fa-window-maximize fa-fw fa-lg"></span>
+                            Plots
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item text-info" href="data_visualizations.html">
+                                <span class="fas fa-chart-line fa-fw fa-lg"></span>
+                                Data Visualizations
+                            </a>
+                            <a class="dropdown-item text-info" href="machine_learning.html">
+                                <span class="fas fa-robot fa-fw fa-lg"></span>
+                                Machine Learning
+                            </a>
+                            <a class="dropdown-item text-info" href="conclusions.html">
+                                <span class="fas fa-chalkboard-teacher fa-fw fa-lg"></span>
+                                Conclusions
+                            </a>
+                        </div> 
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </nav>
+
+
+<!-- Visualization Section-->
+    <div id="amount of visitors" class="page hide-this-thing container-fluid d-flex flex-column justify-content-center align-items-center">
+        <div class="text-center mt-5 pt-5">
+            <h4 class="text-info mb-5"><span class="fas fa-clock"></span> Amount of Visitors by hour</h4>
+            <img src="../images/visits_per_hour.png" alt="Visits Per Hour">
+        </div>
+    </div>
+    <div id="daily total sales" class="page hide-this-thing container-fluid d-flex flex-column justify-content-center align-items-center">
+        <div class="text-center mt-5 pt-5">
+            <h4 class="text-info mb-5"><span class="fas fa-calendar-day fa-fw fa-lg"></span> Daily Total Sales </h4>
+            <img src="../images/daily_total_sales.png" alt="Daily Total Sales">
+        </div>
+    </div>
+    <div id="weekly total sales" class="page hide-this-thing container-fluid d-flex flex-column justify-content-center align-items-center">
+        <div class="text-center mt-5 pt-5">
+            <h4 class="text-info mb-5"><span class="fas fa-calendar-week fa-fw fa-lg"></span> Weekly Total Sales</h4>
+            <img src="../images/weekly_total_sales.png" alt="Weekly Total Sales">
+        </div>
+    </div>
+    <div id="monthly total sales" class="page hide-this-thing container-fluid d-flex flex-column justify-content-center align-items-center">
+        <div class="text-center mt-5 pt-5">
+            <h4 class="text-info mb-5"><span class="fas fa-calendar-alt fa-fw fa-lg"></span> Monthly Total Sales</h4>
+            <img src="../images/monthly_total_sales.png" alt="Monthly Total Sales">
+        </div>
+    </div>
+    <div id="revenue generating visitors" class="page hide-this-thing container-fluid d-flex flex-column justify-content-center align-items-center">
+        <div class="text-center mt-5 pt-5">
+            <h4 class="text-info mb-5"><span class="fas fa-chart-pie fa-fw fa-lg"></span> Revenue Generating Visitors</h4>
+            <img src="../images/revenue_generating_visitors.png" alt="Revenue Generating Visitors">
+        </div>
+    </div>
+
+</body>
+</html>
